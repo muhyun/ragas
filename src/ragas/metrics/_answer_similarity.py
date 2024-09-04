@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 
 
 @dataclass
-class AnswerSimilarity(MetricWithLLM, MetricWithEmbeddings):
+class AnswerSimilarity(MetricWithEmbeddings):
     """
     Scores the semantic similarity of ground truth with generated answer.
     cross encoder score is used to quantify semantic similarity.
